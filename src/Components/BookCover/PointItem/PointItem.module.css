@@ -1,0 +1,234 @@
+
+.point_item {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    padding: 10px;
+
+    @media (min-width: 1200px) {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.title_wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 6px;
+}
+
+.number {
+    font-size: 56px;
+    @media (min-width: 1200px) {
+        transition: all 0.3s ease;
+        font-size: 102px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 700px) {
+    .point_item {
+        transition: all 0.3s ease;
+        margin: 0;
+        height: auto;
+        padding: 15px 5px;
+        width: 95%;
+    }
+
+    .text {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1199px) {
+    .point_item {
+        justify-content: space-evenly;
+        margin: 0;
+        width: 45%;
+        height: auto;
+        padding: 5px;
+        transition: all 0.3s ease;
+    }
+
+}
+
+.title {
+    font-size: 18px;
+    @media (min-width: 1200px) {
+        font-size: 22px;
+        font-weight: 600;
+        align-self: start;
+    }
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 600;
+    @media (min-width: 1200px) {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 1200px) {
+    .point_item_1 {
+        order: 1;
+    }
+
+    .point_item_2 {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        order: 2;
+
+        .text {
+            margin: 10px 0 0 20px;
+            width: 80%;
+        }
+    }
+
+    .point_item_3 {
+        flex-direction: column-reverse;
+        order: 4;
+        margin-left: 275px;
+
+        .title_wrapper {
+            flex-direction: row-reverse;
+            text-align: end;
+
+            .title {
+                margin-top: 10px;
+            }
+        }
+
+        .text {
+            margin: 0 0 16px auto;
+            width: 80%;
+        }
+    }
+
+    .point_item_4 {
+        order: 5;
+
+        .title_wrapper {
+            width: 70%;
+            align-self: end;
+
+            .title {
+                margin-top: 10px;
+            }
+        }
+
+        .text {
+            width: 90%;
+            align-self: center;
+            margin-top: 40px;
+        }
+    }
+
+    .point_item_5 {
+        order: 7;
+        margin-right: 550px;
+
+        .title_wrapper {
+            flex-direction: row-reverse;
+            width: 70%;
+            margin-left: 28px;
+            margin-bottom: 20px;
+
+            .title {
+                text-align: end;
+                margin-top: 10px;
+            }
+        }
+
+        .text {
+            width: 94%;
+            align-self: center;
+        }
+    }
+
+    .point_item_6 {
+        order: 6;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+
+        .text {
+            width: 80%;
+            margin-top: 20px;
+        }
+    }
+
+    .point_item_7 {
+        .title_wrapper {
+            flex-direction: row-reverse;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            justify-content: end;
+
+            .title {
+                width: 60%;
+                text-align: end;
+            }
+
+            .number {
+                margin-top: -20px;
+            }
+        }
+
+        .text {
+            width: 90%;
+            align-self: center;
+        }
+    }
+
+    .point_item_8 {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+
+        .title_wrapper {
+            width: 80%;
+
+            .title {
+                align-self: center;
+            }
+        }
+    }
+
+    .point_item_9 {
+        .title_wrapper {
+            flex-direction: row-reverse;
+            justify-content: end;
+
+            .title {
+                width: 70%;
+                text-align: end;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .point_item_10 {
+        padding-right: 55px;
+
+        .title_wrapper {
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            .number {
+                align-self: flex-start;
+            }
+
+            .title {
+                margin-left: 26px;
+            }
+        }
+
+        .text {
+            width: 42%;
+            margin-left: 26px;
+        }
+    }
+
+
+}

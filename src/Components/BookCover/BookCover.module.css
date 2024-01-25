@@ -1,0 +1,77 @@
+
+.book_cover {
+    max-width: 1200px;
+    font-family: "Roboto", sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+
+@media (min-width: 1200px) {
+
+    .content > :first-child::first-line {
+        font-weight: 900;
+    }
+
+    .content {
+        gap: 5px;
+        padding-left: 60px;
+        justify-content: start;
+    }
+
+    .content > :nth-child(1) {
+        order: 3;
+    }
+
+    .content > :nth-child(2) {
+        order: 6;
+        width: 250px;
+    }
+
+    .content > :nth-child(3) {
+        order: 1;
+    }
+
+    .content > :nth-child(4) {
+        order: 2;
+    }
+
+    .content > :nth-child(5) {
+        order: 4;
+    }
+
+    .content > :nth-child(6) {
+        order: 5;
+    }
+
+    .content > :nth-child(7) {
+        order: 7;
+    }
+
+    .content > :nth-child(8) {
+        order: 6;
+    }
+
+    .content > :nth-child(9) {
+        order: 8;
+    }
+
+    .content > :nth-child(10) {
+        order: 10;
+    }
+
+    .content > :nth-child(11) {
+        order: 11;
+    }
+
+    .content > :nth-child(12) {
+        order: 12;
+    }
+
+}

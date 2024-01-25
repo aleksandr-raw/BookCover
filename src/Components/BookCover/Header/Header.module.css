@@ -1,0 +1,167 @@
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+.intro {
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    font-style: italic;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.title_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.number {
+    font-size: 220px;
+    font-weight: 900;
+    letter-spacing: -30px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+@media (max-width: 700px) {
+    .header {
+        transition: all 0.3s ease;
+        align-items: start;
+    }
+
+    .intro {
+        font-size: 14px;
+        width: 100%;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        order: 2;
+    }
+
+    .title_wrapper {
+        margin-left: 20px;
+        transition: all 0.3s ease;
+        order: 1;
+    }
+
+    .number {
+        font-size: 180px;
+        letter-spacing: -20px;
+        transition: all 0.3s ease;
+    }
+
+    .title {
+        margin-top: 30px;
+        font-size: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .name {
+        font-size: 30px;
+        transition: all 0.3s ease;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1199px) {
+    .header {
+        justify-content: start;
+        align-items: end;
+        transition: all 0.3s ease;
+    }
+
+    .intro {
+
+        font-size: 18px;
+        width: 80%;
+        transition: all 0.3s ease;
+    }
+
+    .title_wrapper {
+        align-self: center;
+        margin-left: 40px;
+        transition: all 0.3s ease;
+    }
+
+    .number {
+        font-size: 300px;
+        letter-spacing: -40px;
+        transition: all 0.3s ease;
+    }
+
+    .title {
+        font-size: 28px;
+        transition: all 0.3s ease;
+    }
+
+    .name {
+        font-size: 50px;
+        transition: all 0.3s ease;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        margin-left: 0;
+        justify-content: start;
+        align-items: end;
+        padding-right: 300px;
+        transition: all 0.3s ease;
+
+    }
+
+    .intro {
+        color: black;
+        font-weight: 700;
+        margin-bottom: 50px;
+        width: 90%;
+        transition: all 0.3s ease;
+
+    }
+
+    .title_wrapper {
+        margin-left: 0;
+        transition: all 0.3s ease;
+
+    }
+
+    .number {
+        position: relative;
+        font-size: 480px;
+        letter-spacing: -80px;
+        left: -75px;
+        bottom: -40px;
+        margin-right: 40px;
+        transition: all 0.3s ease;
+
+    }
+
+    .title {
+        font-weight: 500;
+        font-size: 34px;
+        transition: all 0.3s ease;
+
+    }
+
+    .name {
+        font-size: 100px;
+        max-width: 600px;
+        transition: all 0.3s ease;
+
+    }
+}
+
