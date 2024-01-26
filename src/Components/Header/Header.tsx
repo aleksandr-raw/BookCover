@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import {titleText} from "../../../texts/texts";
+import {titleText} from "../../texts/texts";
 
 export const Header = () => {
     return (
